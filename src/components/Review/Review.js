@@ -44,14 +44,15 @@ const Review = () => {
               product={pd}
             />
           ))}
+          {placedOrder && <img src={happyImage} alt="" />}
         </div>
-        {
-          placedOrder && <img src={happyImage} alt=""/>
-        }
+
         <div className="cart-container">
           <Cart cart={cart}>
             <Link>
-              <button onClick={handlePlaceOrder} className="main-btn">Place Order</button>
+              <button onClick={handlePlaceOrder} className="main-btn">
+                Place Order
+              </button>
             </Link>
           </Cart>
         </div>
